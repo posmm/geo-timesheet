@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "monday-sdk-js": "2.3.0",
+    "monday-sdk-js": "2.3.0"
   },
   "devDependencies": {
     "parcel": "^2.11.0"
