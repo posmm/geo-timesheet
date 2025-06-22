@@ -1,0 +1,31 @@
+{
+  "name": "GeoTimesheet",
+  "features": [
+    {
+      "type": "board_view",
+      "view": {
+        "name": "Geo Timesheet View",
+        "url": "https://view.po5m.com/view",
+        "placement": "page"
+      }
+    },
+    {
+      "type": "integration",
+      "integration": {
+        "recipes": [
+          {
+            "name": "Every Sunday build next week's timesheet",
+            "kind": "every_time_period",
+            "trigger": { "url": "/weekly-rollover" },
+            "schedule": {
+              "frequency": "weekly",
+              "weekdays": ["sun"],
+              "hour": 3,
+              "minute": 0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
